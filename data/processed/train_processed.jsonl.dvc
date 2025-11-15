@@ -1,0 +1,5 @@
+outs:
+- md5: 5940f3a8f5ac30f145e45a773810d325
+  size: 11271701
+  hash: md5
+  path: train_processed.jsonl
