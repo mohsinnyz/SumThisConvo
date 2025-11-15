@@ -1,0 +1,53 @@
+# ----------------------------------------------------------------
+# Python & Virtual Environments
+# ----------------------------------------------------------------
+# Ignore the virtual environment folder
+venv/
+*.pyc
+__pycache__/
+.env
+
+# ----------------------------------------------------------------
+# DVC (Data Version Control)
+# ----------------------------------------------------------------
+# Ignore the DVC cache. This is critical.
+.dvc/cache
+# We also ignore the local config
+.dvc/config.local
+
+# ----------------------------------------------------------------
+# MLflow (Experiment Tracking)
+# ----------------------------------------------------------------
+# Ignore all MLflow experiment runs
+mlruns/
+
+# ----------------------------------------------------------------
+# Notebooks
+# ----------------------------------------------------------------
+.ipynb_checkpoints
+notebooks/.ipynb_checkpoints
+
+# ----------------------------------------------------------------
+# OS-specific files
+# ----------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------------------------------
+# IDE-specific
+# ----------------------------------------------------------------
+.vscode/
+.idea/
+
+# ----------------------------------------------------------------
+# Data (Optional - DVC handles this, but good to be safe)
+# ----------------------------------------------------------------
+# We already track .dvc files, so we can ignore the raw files
+# to prevent accidentally committing them to Git.
+/data/raw/*
+/data/processed/*
+# But we must NOT ignore the DVC pointer files!
+!/data/raw/*.dvc
+!/data/processed/*.dvc
+# And don't ignore .gitkeep files
+!/data/processed/.gitkeep

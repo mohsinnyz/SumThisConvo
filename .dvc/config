@@ -1,0 +1,10 @@
+[core]
+    remote = dagshub_s3
+['remote "r2"']
+    url = s3://sumthisconvo-dvc-new
+    endpointurl = https://3bc3e3187346686985aaffcbb7a3c0c5.r2.cloudflarestorage.com
+    access_key_id = c44d9f7d5072c237edb00704f608bcb6
+    secret_access_key = 37e1cd45a0a4519a2545d6876b80c43ac127d69219270eac40883771360a7172
+['remote "dagshub_s3"']
+    url = s3://SumThisConvo
+    endpointurl = https://dagshub.com/api/v1/repo-buckets/s3/mohsinnyz

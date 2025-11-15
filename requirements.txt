@@ -1,0 +1,39 @@
+# --- Phase 1: Data Pipeline ---
+dvc[gdrive]     # For data versioning with Google Drive
+pandas          # For data manipulation
+datasets        # For loading the SAMSum dataset from Hugging Face
+tqdm            # Progress bars (always useful)
+
+# --- Phase 2 & 3: Training, Evaluation & Tracking ---
+transformers    # Core Hugging Face library
+accelerate      # For easy multi-GPU/TPU/CPU training
+bitsandbytes    # For 8-bit/4-bit quantization (QLoRA)
+peft            # Parameter-Efficient Fine-Tuning (LoRA)
+torch           # PyTorch
+mlflow          # For experiment tracking and model registry
+evaluate        # Hugging Face evaluation library
+rouge_score     # ROUGE metric for summarization
+scikit-learn    # For additional metrics
+
+# --- Phase 5: Deployment ---
+fastapi         # For building the prediction API
+uvicorn[standard] # ASGI server to run FastAPI
+
+# --- Phase 6: Monitoring ---
+evidently       # For data and model drift detection
+
+# --- Phase 7: Dashboard ---
+streamlit       # For the demo UI
+
+
+# --- Phase 2 & 3: Training, Evaluation & Tracking ---
+transformers    # Core Hugging Face library
+accelerate      # For easy multi-GPU/TPU/CPU training
+bitsandbytes    # For 8-bit/4-bit quantization (QLoRA)
+peft            # Parameter-Efficient Fine-Tuning (LoRA)
+torch           # PyTorch
+mlflow          # For experiment tracking and model registry
+evaluate        # Hugging Face evaluation library
+rouge_score     # ROUGE metric for summarization
+scikit-learn    # For additional metrics
+trl             # <-- ADD THIS LINE (for SFTTrainer)
