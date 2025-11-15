@@ -1,0 +1,7 @@
+[core]
+    remote = dagshub_s3
+['remote "dagshub_s3"']
+    url = s3://SumThisConvo
+    access_key_id = e39ecc8717dde9b9049b7d2e5b41089b31578ad8
+    secret_access_key = e39ecc8717dde9b9049b7d2e5b41089b31578ad8
+    endpointurl = https://dagshub.com/api/v1/repo-buckets/s3/mohsinnyz
